@@ -102,6 +102,10 @@
       <id>repo.jenkins-ci.org</id>
       <url>https://repo.jenkins-ci.org/public/</url>
     </repository>
+      <repository>
+	<id>jitpack.io</id>
+	<url>https://jitpack.io</url>
+      </repository>
   </repositories>
 
     <developers>
@@ -179,10 +183,16 @@
       <artifactId>workflow-scm-step</artifactId>
       <version>2.4</version>
     </dependency>
+    <!-- <dependency> -->
+    <!--   <groupId>org.jenkins-ci.plugins</groupId> -->
+    <!--   <artifactId>matrix-project</artifactId> -->
+    <!--   <version>1.7.1</version> -->
+    <!-- </dependency> -->
+    <!-- TODO(craigatgoogle): This is a temporary addressing this issue: https://issues.jenkins-ci.org/browse/JENKINS-55044 -->
     <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>matrix-project</artifactId>
-      <version>1.7.1</version>
+      <groupId>com.github.craigatgoogle</groupId>
+      <artifactId>matrix-project-plugin</artifactId>
+      <version>fix~upgrade-junit-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
